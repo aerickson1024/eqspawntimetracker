@@ -1,7 +1,10 @@
 var express = require('express');
+var incomingTrafficeController = require('./server/api/incomingTrafficController');
 var app = express();
 
 app.set('port', (process.env.PORT || 3000));
+
+incomingTrafficeController(app);
 
 app.use(express.static(__dirname + '/client'));
 
