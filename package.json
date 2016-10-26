@@ -4,7 +4,7 @@
   "description": "tracks everquest npc spawn times once they have been killed",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
   "author": "Andy Erickson",
   "license": "ISC",
