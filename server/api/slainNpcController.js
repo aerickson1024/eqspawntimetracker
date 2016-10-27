@@ -16,9 +16,14 @@ module.exports = function(app) {
       }
 
       if (!foundNpc) {
+        var newNpc = new npc({
+          name: req.body.Name,
+          respawnRate: 0
+        });
+
         res.json({
-          success: false,
-          message: req.body.Name + ' was not found in the database'
+          success: true,
+          message: req.body.Name + ' was added to the database.'
         });
       } else {
         var newKill = new slainNpc({
