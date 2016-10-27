@@ -21,9 +21,18 @@ module.exports = function(app) {
           respawnRate: 0
         });
 
-        res.json({
-          success: true,
-          message: req.body.Name + ' was added to the database.'
+        newNpc.save(function(err) {
+          if (err) {
+            return res.json({
+              success: false,
+              message: 'NPC was not able to save to the database.'
+            });
+          }
+          
+          res.json({
+            success: true,
+            message: req.body.Name + ' was added to the database.'
+          });
         });
       } else {
         var newKill = new slainNpc({
