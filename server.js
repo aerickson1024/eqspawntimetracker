@@ -24,6 +24,6 @@ io.on('connection', function(socket) {
   });
 });
 
-server.listen(3000, function(){
-  console.log('[%s] Server is listening on port %s', new Date(), 3000);
+server.listen(app.get('port'), function(){
+  console.log('[%s] Server is listening on port %s', new Date(), app.get('port'));
 });
