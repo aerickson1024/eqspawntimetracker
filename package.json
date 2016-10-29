@@ -1,13 +1,21 @@
 {
-  "name": "eq_spawn_time_tracker",
+  "name": "eqspawntimetracker",
   "version": "1.0.0",
-  "description": "tracks everquest npc spawn times once they have been killed",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Andy Erickson",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aerickson1024/eqspawntimetracker.git"
+  },
+  "author": "andy erickson",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aerickson1024/eqspawntimetracker/issues"
+  },
+  "homepage": "https://github.com/aerickson1024/eqspawntimetracker#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
