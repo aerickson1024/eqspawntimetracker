@@ -2,7 +2,7 @@
   "name": "eq_spawn_time_tracker",
   "version": "1.0.0",
   "description": "tracks everquest npc spawn times once they have been killed",
-  "main": "main.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
