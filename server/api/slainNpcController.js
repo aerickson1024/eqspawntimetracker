@@ -86,8 +86,9 @@ module.exports = function(app, io) {
       }
 
       io.emit('kill', {
-        name: npcInfo.name,
-        respawnRate: npcInfo.respawnRate
+        timestamp: new Date(),
+        name: newKill.name,
+        spawnTime: newKill.spawnTime
       });
 
       callback();

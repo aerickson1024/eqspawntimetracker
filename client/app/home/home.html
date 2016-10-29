@@ -1,0 +1,36 @@
+<div class="row" style="margin: 50px 50px 0 50px;">
+  <div class="col-lg-12">
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading"><h3>Mobs that will respawn shortly</h3></div>
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <th>
+            Timestamp
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Respawn Time
+          </th>
+        </thead>
+        <tbody>
+          <tr ng-repeat="kill in vm.kills">
+            <td>
+              {{ kill.timestamp }}
+            </td>
+            <td>
+              {{ kill.name }}
+            </td>
+            <td>
+              {{ kill.spawnTime }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
